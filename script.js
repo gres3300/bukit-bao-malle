@@ -10,9 +10,9 @@ const dataKalender = [
         cuacaIcon: "fa-cloud-showers-heavy text-danger",
         campingIcon: "fa-tent-arrow-down-to-line text-muted",
         ringkasan: "Puncak Musim Hujan",
-        keteranganCuaca: "Curah hujan sangat tinggi disertai angin musiman kencang dan potensi kabut tebal.",
+        keteranganCuaca: "Curah hujan sangat tinggi disertai angin musiman kencang.",
         rekomendasi: "Jalur pendakian licin & rawan. Tidak direkomendasikan untuk aktivitas luar ruangan.",
-        aktivitasCocok: "Wisata edukasi atau kuliner lokal di area bawah pemukiman warga Desa Lalatedong.",
+        aktivitasCocok: "Wisata edukasi atau kuliner lokal di area bawah pemukiman warga Desa Lalatedzong.",
         tipsSafety: "Hindari berada di dekat area lereng curam atau tebing yang licin."
     },
     {
@@ -23,10 +23,10 @@ const dataKalender = [
         cuacaIcon: "fa-sun text-warning",
         campingIcon: "fa-campground text-success",
         ringkasan: "Cuaca Stabil",
-        keteranganCuaca: "Intensitas hujan menurun drastis, cuaca cerah berawan dan udara terasa sejuk.",
+        keteranganCuaca: "Intensitas hujan menurun, cuaca cerah berawan dan udara terasa sejuk.",
         rekomendasi: "Waktu awal yang sangat baik untuk mulai melakukan pendakian ringan dan fotografi.",
         aktivitasCocok: "Trekking pagi hari, berburu foto panorama, dan menyaksikan sunrise.",
-        tipsSafety: "Gunakan alas kaki berpola grip baik karena beberapa tanah basah tersisa."
+        tipsSafety: "Gunakan alas kaki yang sesuai saat melakukan pendakian."
     },
     {
         id: "mar",
@@ -50,7 +50,7 @@ const dataKalender = [
         campingIcon: "fa-campground text-success",
         ringkasan: "Panorama Cerah",
         keteranganCuaca: "Sinar matahari optimal, kelembapan seimbang, dan jarak pandang sangat jelas.",
-        rekomendasi: "Waktu terbaik menikmati panorama lanskap Selat Makassar dari ketinggian.",
+        rekomendasi: "Waktu terbaik menikmati panorama laut Majene dari ketinggian.",
         aktivitasCocok: "Sightseeing, pembuatan konten video/foto drone, dan piknik keluarga.",
         tipsSafety: "Gunakan sunscreen / tabir surya dan topi pelindung matahari."
     },
@@ -77,7 +77,7 @@ const dataKalender = [
         ringkasan: "Mulai Musim Angin",
         keteranganCuaca: "Perubahan pola angin pasat yang mulai bertiup lebih kencang dari arah darat/laut.",
         rekomendasi: "Tetap aman berkunjung siang hari. Waspada saat mendirikan tenda malam hari.",
-        aktivitasCocok: "Trekking singkat di pagi hari & fotografi lanskap.",
+        aktivitasCocok: "Trekking singkat di pagi hari.",
         tipsSafety: "Gunakan pasak tenda ekstra kuat jika ingin berkemah di area puncak."
     },
     {
@@ -89,7 +89,7 @@ const dataKalender = [
         campingIcon: "fa-tent text-warning",
         ringkasan: "Puncak Angin",
         keteranganCuaca: "Puncak hembusan angin kencang berdurasi panjang, kondisi langit relatif cerah.",
-        rekomendasi: "Sangat disarankan kunjungan harian (Day-trip). Kurang disarankan camping berdiri.",
+        rekomendasi: "Sangat disarankan kunjungan harian (Day-trip). Kurang disarankan camping.",
         aktivitasCocok: "Menikmati pemandangan laut dari spot foto terlindung.",
         tipsSafety: "Gunakan pakaian windbreaker (tahan angin) dan hindari berdiri terlalu dekat bibir tebing."
     },
@@ -154,7 +154,7 @@ const dataKalender = [
         campingIcon: "fa-tent-arrow-down-to-line text-muted",
         ringkasan: "Puncak Hujan",
         keteranganCuaca: "Tingkat curah hujan tinggi, potensi petir dan angin barat yang kuat.",
-        rekomendasi: "Sangat tidak disarankan mendaki atau berkemah demi keselamatan.",
+        rekomendasi: "Tidak disarankan mendaki atau berkemah demi keselamatan.",
         aktivitasCocok: "Wisata budaya dan kuliner khas Sendana di pemukiman warga.",
         tipsSafety: "Utamakan keselamatan diri dan keluarga, hindari area perbukitan saat hujan lebat."
     }
