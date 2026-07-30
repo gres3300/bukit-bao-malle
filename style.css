@@ -126,8 +126,19 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
    ========================================================= */
 .hero-section {
     min-height: 100vh;
-    background: url('https://i.imgur.com/XKv4DbK.jpeg') center center / cover no-repeat fixed;
+    background-image: url('https://i.imgur.com/XKv4DbK.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Menggunakan scroll agar gambar pasti muncul di HP */
     position: relative;
+}
+
+/* Efek Fixed Parallax hanya aktif saat dibuka di Layar Laptop / Komputer */
+@media (min-width: 992px) {
+    .hero-section {
+        background-attachment: fixed;
+    }
 }
 
 .hero-overlay {
