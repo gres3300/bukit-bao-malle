@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
 }
 
 /* =========================================================
-   1. HERO SECTION STYLING
+   1. HERO SECTION STYLING (SUDAH DIPERBAIKI LINK GAMBARNYA)
    ========================================================= */
 .hero-section {
     min-height: 100vh;
-    background: url('https://imgur.com/XKv4DbK') center center / cover no-repeat fixed;
+    background: url('https://i.imgur.com/XKv4DbK.jpeg') center center / cover no-repeat fixed;
     position: relative;
 }
 
@@ -158,6 +158,40 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
     60% {
         transform: translateY(-5px);
     }
+}
+
+/* =========================================================
+   2. TENTANG SECTION (STYLING KARTU & IKON BARU)
+   ========================================================= */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #e8f5e9;
+    color: #1b4d3e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card-hover {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(27, 77, 62, 0.08) !important;
+}
+
+.feature-card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(27, 77, 62, 0.15) !important;
+}
+
+.feature-card-hover:hover .icon-circle {
+    background-color: #1b4d3e;
+    color: #ffffff;
+}
+
+.text-success-custom {
+    color: #1b4d3e !important;
 }
 
 /* =========================================================
@@ -311,20 +345,4 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
     .gallery-item {
         height: 200px;
     }
-}
-
-
-/* Tampilan Lingkaran Ikon & Warna Khas tentang Bukit Bao Malle' */
-.icon-circle {
-    width: 65px;
-    height: 65px;
-    background-color: #e8f5e9; /* Warna hijau muda lembut */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-success-custom {
-    color: #1b4d3e !important; /* Warna hijau tua khas Bukit Bao Malle' */
 }
