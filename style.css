@@ -376,3 +376,52 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
         flex: 0 0 100% !important;
     }
 }
+
+
+/* =========================================================
+   PENYESUAIAN KHUSUS HP (TAMPILAN RINGKAS & PRESISI)
+   ========================================================= */
+@media (max-width: 767.98px) {
+    /* Mengunci container agar persis di tengah */
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Ukuran Lingkaran Ikon Lebih Compact & Pas */
+    .icon-circle {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .icon-circle i {
+        font-size: 1.25rem !important; /* Ukuran ikon diperkecil sedikit agar manis */
+    }
+
+    /* Kartu Fitur (Tentang) Lebih Ringkas & Rapi */
+    .feature-card-hover {
+        padding: 1.25rem 1rem !important; /* Mengurangi ruang kosong atas-bawah */
+    }
+
+    .feature-card-hover h5 {
+        font-size: 0.95rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .feature-card-hover p {
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Memastikan Grid Kartu Pas di Tengah */
+    #tentang .col-md-4,
+    #tentang .col-md-6,
+    #tentang .col-sm-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}
