@@ -14,17 +14,27 @@
     --font-body: 'Poppins', sans-serif;
 }
 
-/* Base Body Styles */
-body {
+/* Base Body Styles (Diperbaiki agar HP tidak bisa digeser ke samping) */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
     font-family: var(--font-body);
     background-color: var(--color-putih);
     color: #333333;
-    overflow-x: hidden;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, .font-montserrat {
     font-family: var(--font-heading);
+}
+
+/* Mengunci semua container agar tidak melebihi layar HP */
+.container, .container-fluid, .row {
+    max-width: 100% !important;
+    overflow-x: hidden;
 }
 
 .bg-cream {
@@ -122,10 +132,11 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
 }
 
 /* =========================================================
-   1. HERO SECTION STYLING (SUDAH DIPERBAIKI LINK GAMBARNYA)
+   1. HERO SECTION STYLING (RESPONSIF HP)
    ========================================================= */
 .hero-section {
     min-height: 100vh;
+    width: 100%;
     background-image: url('https://i.imgur.com/XKv4DbK.jpeg');
     background-position: center center;
     background-size: cover;
@@ -223,6 +234,7 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
     cursor: pointer;
     border-top: 5px solid transparent;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 /* Warna Status Kalender */
@@ -330,7 +342,7 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
 }
 
 /* =========================================================
-   RESPONSIVE DESIGN ADAPTATIONS
+   OPTIMASI UNTUK LAYAR HP (MOBILE)
    ========================================================= */
 @media (max-width: 991.98px) {
     .navbar-custom {
@@ -339,7 +351,7 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
     }
 
     .hero-section h1 {
-        font-size: 2.8rem;
+        font-size: 2.3rem !important;
     }
 
     .py-6 {
@@ -350,10 +362,17 @@ h1, h2, h3, h4, h5, h6, .font-montserrat {
 
 @media (max-width: 575.98px) {
     .hero-section h1 {
-        font-size: 2.2rem;
+        font-size: 1.9rem !important;
     }
 
     .gallery-item {
         height: 200px;
+    }
+
+    /* Memaksa elemen grid di kalender menjadi 100% penuh bersusun ke bawah */
+    #calendarGrid > [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
     }
 }
